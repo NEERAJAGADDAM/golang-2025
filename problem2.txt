@@ -1,0 +1,13 @@
+arr := []int{1, 2, 3, 4, 5}  ----------- array capacity =5
+
+	s := arr[1:3] ------- it slices the array values from 1 to three in this 1 is included and 3 is excluded so that 
+    s={2,3} 
+
+	fmt.Println(len(s), cap(s)) // Length and capacity before appending ---- length is 2 and the capacity  
+    is 4 beacuse the s={0,2,3,0}
+    
+
+
+	s = append(s, 10, 20, 30)
+
+	fmt.Println(arr, s) ---- arr={1,2,3,4,5} beacuse there is no updation in array, s={2,3,10,20,30}

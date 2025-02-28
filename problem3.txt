@@ -1,0 +1,25 @@
+
+
+func modifySlice(s []int) {
+
+    s[0] = 100 ---------- assigning the s[0] value as 100(s[0]=100)
+
+}
+
+
+
+func main() {
+
+    arr := []int{1, 2, 3, 4, 5} ----  array capacity = 5
+
+    s := arr[:3] ------ s={1,2} in this the arr[:3] 3 is excluded
+
+    
+
+    modifySlice(s) ------ now we are calling the modifySlice function of s , so that the modified slice becomes s={100,2}
+            
+    
+
+    fmt.Println(arr) ----- arr={100,2,3,4,5} beacuse we are modified the slice value.
+
+}

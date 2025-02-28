@@ -1,0 +1,14 @@
+arr := []int{1, 2, 3, 4} ------------ this declares the array of capacity 4 
+
+	s1 := arr[:2] --------------- s1  sliceinclude the elements  of arr[0] and arr[1] beacuse arr[:2] in this 2 is excluded
+    so that the s1 capacity is present 2. s1= {1,2}
+
+	s2 := arr[1:3] -------------  s2 slice have elements  of arr[1], arr[2] bacuse 1 is included and 3 is exluded.
+    and the capacity of the s2 is also 2. s2={2,3}
+
+
+
+	s1 = append(s1, 10) // Modify slice s1 --------------- we are pushing or adding the new element to the existing s1
+     so that the existing s1 is updated as s1= {1,2,10}
+
+	fmt.Println(arr, s1, s2) ----- that the updated array is aar={1,2,10,4}, s1={1,2,10}, s2= {2,3}

@@ -1,0 +1,24 @@
+
+
+func main() {
+
+    s1 := []int{1, 2, 3, 4} ----------- capacity 4
+
+    s2 := make([]int, len(s1)) ----------- the capacity of the s2 is equal to the length of the s1
+
+    copy(s2, s1) ------------- Now we are copying elements of s1 to s2
+
+
+
+    s1[0] = 100 --------------- s1 is modified so that the s1={100,2,3,4}
+
+    fmt.Println(s1, s2) ------------- it should print s1={100,2,3,4} and s2={1,2,3,4} beacuse we 
+    are copying s1 elements to s2 before modifying the s1 so that the s2 will not effect
+
+
+
+    s1 = append(s1, 200) ---------- now after appending the s1 values is s1={100,2,3,4,200}
+
+    fmt.Println(s1, s2) ---------- it will print s1={100,2,3,4,200} and s2={1,2,3,4}
+
+}

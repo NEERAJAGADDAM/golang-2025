@@ -1,6 +1,7 @@
 package main
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import (
 <<<<<<< HEAD
 	"Inventory-Management/inventory"
@@ -86,3 +87,33 @@ func main(){
  fmt.Println(reverseString("hello"))
 }
 >>>>>>> af82b82 (session5 commit)
+=======
+import "fmt"
+
+type Human struct {
+	name     string
+	age      int
+	isplaced bool
+	address  string
+}
+
+
+func (h *Human) Sleep() {
+	fmt.Println("Hello", h.name)
+}
+
+func main() {
+	h := &Human{
+		name:     "Neeraja",
+		age:      21,
+		isplaced: true,
+		address:  "Warangal",
+	}
+
+	hPointer := new(Human) 
+	fmt.Println(hPointer)
+	fmt.Println(&h.address)
+	fmt.Println
+	h.Sleep() 
+}
+>>>>>>> dcbabf7 (fourth commit)
